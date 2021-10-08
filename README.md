@@ -1,3 +1,4 @@
-## Aulas de HTML com a Cynthia Zanoni.
+## Aulas de HTML com a Cynthia Zanoni
 
-Código de HTML com diversos comentários de estudo. 
+✔️ Código de HTML 
+✔️ Diversos comentários de estudo 

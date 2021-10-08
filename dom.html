@@ -1,0 +1,64 @@
+<!-- Dom - modelo de documento por objeto, fazer estilização com css/interação com JS
+Controla hierarquia da página  JS ajuda manipular api e elemntos dentro página web
+
+Window
+document
+html 
+head - meta,meta,title,link
+body - div (img,h1,p,div) e script 
+
+Dom - manipulação atráves de métodos (ação que pode realizar por um elemento ou conjunto de 
+elementos html)-->
+
+
+  <!-- document é uma palavra reservada em javascript para chamar documento, por ponto para adicionar atributos -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+    <main>
+
+    <p id="article-description"> <!-- id para facilitar trabalho-->
+        Me desenvolvendo par virar dev
+    </p>
+    
+    <p id="texto1"> 
+        Me desenvolvendo par virar dev
+    </p>
+
+    <script type="text/javascript">
+       
+
+       var paragrafo = document.getElementById("article-description");
+       
+       paragrafo.style="green";
+
+       paragrafo.innerText="Texto mudou";
+       
+       document.getElementById ("article-description").style.color="red";
+              
+       paragrafo.innerText =" Texto mudou novamentee"
+
+              
+              </script>
+
+              
+</main>
+ </body>
+ </html> 
+ 
+     <!-- No style color red a cor do parágrafo fica vermelha 
+    
+    na var paragro faço chamada oficial do documento-->
+
+     <!-- Innertext coloca dinamicamente texto dentro do parágrafo
+    
+    Cor do texto atributo inline CSS de forma adicionado de forma dinamica
+
+Aba console vervariáveis-->

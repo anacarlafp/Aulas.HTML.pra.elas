@@ -1,0 +1,150 @@
+<!DOCTYPE html> <!--Declaração que indica ao navegadora versão do HTML - não é uma tag, por conta 
+    disso não tem fechamento "/"-->
+
+    <html lang="en">
+
+    <head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página para Exercícios HTML | Gama Academy </title> <!-- Texto do topo dda janela-->
+    <meta name = "Description" content="Texto descritivo da página web"/> <!-- Descrição da página-->
+    <meta name = "Author" content = "Gama Academy"/>
+    <meta name="viewport" content = "width=device-width ,initial-scale=1.0"/> <!-- Forma que o navegeador vdeve 
+        fazer a página, width=device-width Largura da minha página, meu device, initial-scale=1.0" é a escala -->
+
+    <link rel="stylesheet" type="text/css" href="estilo.css"> <!--Importar algum arquivo css externo com página web-->
+
+    <script type="text/javascript" src="script.js"> </script> <!-- src para carregar arquivo JS -->
+
+</head>
+<body> 
+
+    <header>
+        <!-- Fim do cabeçalho-->
+        <img src="BV.imagem.png" alt="Logo da Empresa" title = "Logo da Empresa"/>
+    </header>
+
+     <main><!--define o conteúdo principal dentro do <body> em seu documento ou aplicação-->
+      
+        <h1>Banco BV</h1>
+        <p> O Banco BV é um lugar com muita diversidade...</p>
+        <h3><strong> Diversidade</strong></h3>
+        <p>  Banco <span>brasileiro</span> </p>  <!-- strong deixa em negrito e span é um texto auxiliar-->
+    
+       <!--  <a href="http://google.com" title="Site do Google" target="_blanck">  href para colocar link url
+    
+            Teste de link
+        </a> -->
+    
+            <video width="550" height="560" controls> <!-- width é o tamanho, height é a altura e o controls está relacionado ao play/pause-->
+            <source src="Vídeo_bancobv.mp4" type="video/mp4"/>
+            </main>
+         
+<main>
+    <iframe src="https://www.gama.academy/" width="450" height="350" >
+    
+    <!-- Permite acessar outra página dentro da minha-->
+    </iframe>
+
+</main>
+    <!--3 tipo de listas, desordenadas - marcação de um ponto, ordernada- marcação numerica para ordenar e a de definição-->
+
+<main>
+    <ul type="Circle"> <!--Lista desordenada, neste type mudou para bolinha o icone-->
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <ol start="3" type="A"> <!--Lista ordenada, type para colocar letra-->
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ol>
+
+    <d1>
+        <dt>Palavra 1</dt>
+        <dd> Explicação da palavra 1</dd>
+    </d1>
+ <br>
+</main>
+
+    <table>
+        <thead> <!-- Cabeçalho da tabela e o th são as colunas-->
+<tr>
+    <th> Mês da atividade</th>
+    <th> Nome da atividade</th>
+</tr>
+        </thead>
+
+        <tbody> <!-- Corpo da tabela-->
+            <tr>
+                <td colspan="2">Janeiro</td> <!-- criar item na tebela, colspan2-coluna vai usar 2 espaços de coluna--->
+            </tr>
+            <tr>
+                <td> Fevereiro</td>
+                <td rowspan="2"> Meditação</td> <!--Coloca em fevereiro e março-->
+            </tr>
+            <tr>
+                <td> Março</td>
+            </tr>
+
+        </tbody>
+        <tfoot> <!--Rodapé da tabela-->
+            <tr>
+                <td> Total de atividades</td>
+                <td> 2 atividade</td>
+            </tr>
+        </tfoot> 
+    </table>
+
+<!--Section e dentro colocar divs-->
+
+<section>
+    <div class="Bloco de conteúdo" id="div2"> <!--Exemplo, ams precisa usar CSS-->
+
+    <!--Fim do conteudo principal-->
+
+    <footer> <!--Rodapé -->
+
+        
+    </footer>
+</body>
+</html>
+
+<!--Acessibilidade na WEB, cartilha
+
+4 tipos: Perceptível (toque,som),operável(interfase, navegação,ação), compreensível (Informação forma simples, validação de dados)
+e robústa (Dde funcinar bem o site em diversos navegadores)
+
+Acessibilidade conteúdos não textual - A (Good)breve descrição, AA(better) requsitos do primeiro A+ legenda para áudio e vídeo e AAA(great) 
+outros anteriores mais linguagem de sinais
+
+ARIA - Especificação W3C para aprimorar acessibilidade (A11Y), definida através
+de um elemento HTML-->
+  
+<nav role="navigation"> <!--Bloco de nagevação-->
+    <ul role="menu"> <!--recebeu pape de ser o menu-->
+    <a href="" role="menuitem"> </a> 
+    <li>
+    </li>
+    </ul>
+    </nav>
+    
+    <!--Landmarks e como utilizar para melhorar interação com leitores de tela
+    Definidas através d eelementos HTML, trabalhamos com 3 intruções-->
+    <section>
+    
+        <!-- Role:Definem o que um elemento é ou faz
+        State:propriedade especiais que definem condições atuais dos elementos
+        Properties: desreve a relação com outros elementos e eles não mudam uma 
+        vez que são definidos-->
+    <div role="tablist">
+        <button role="tab" aria-selected="true">Veg</button>
+        <button role="tab" aria-selected="false">Non-Veg</button>
+        <button role="tab" aria-selected="false">Vegan</button>
+    </div>
+    <div role="tabpanel" aria-labelledby="...">...</div> <!--Carrega conteudo especifico-->
+    <div role="tabpanel" aria-labelledby="...">...</div>
+    <div role="tabpanel" aria-labelledby="...">...</div>
+    </section>

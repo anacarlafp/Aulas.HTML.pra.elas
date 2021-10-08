@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main role= "main" >  <!--Formulários, no lugar de # colocar destino correto-->
+
+        <form action= "#" method="POST">  <!--method indicar protocolo http que vai usar, 
+            get envia já na url e o post envia sem expor a url de destino. Segundo é mais seguro-->
+
+          <label for="Campo1">Nome</label>
+            <input type="text" name="nome" id="Campo" /> <!-- Responsável por grande parte elementos que podemos - 
+                adicionar dentro do formulário, o TYPE é um atributo - atrelar campo com id-->
+                <label for="campo2"> Interesses de Estudos</label>
+                <select name="Interesses" id="campo2">  <!----> lista de opções para adicionar a página --> 
+                    <option value="1">Vendas</option>
+                    <option value="2">Marketing</option>
+
+                </select>
+                 
+                <fieldset>  <!-- Agrupar e contextualizar campo radio ou ckeckbox - legend é a legenda do grupo de elementos-->
+                    <legend> Interesses de Estudos</legend>
+
+                    <label for="campo31"> Vendas</label>
+                    <input type="radio" name="Interesse2" value="1" id="campo31" /> 
+
+                    <label for="campo32"> Marketing</label>
+                    <input type="radio" name="Interesse2" value="1" id="campo32"/> <!-- input radio tem que por mesmo nome para navegador entender-->
+                </fieldset> 
+
+                    <fieldset> <!-- organiza as palavras vendas, marketing em quadrados-->
+                        
+                        <legend> Interesses de Estudos 2 </legend>
+
+                    <label for="campo00"> Vendas</label>
+                        <input type="checkbox" name="Interesse3" value="1" id="campo00" /> 
+
+                        <label for="campo11"> Marketing</label>
+                        <input type="checkbox" name="Interesse3" value="1" id="Campo11"/> 
+
+                </fieldset>                        
+
+                        <input type="submit" value="Enviar o formulário"/> <!-- value contem texto, fazer envio usando 
+                            buttom precisa de JS manipulando função para fazer envio-->
+
+        </form>
+    </main>
+</body>
+</html>
+
+
+

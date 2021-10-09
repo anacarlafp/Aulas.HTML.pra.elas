@@ -14,7 +14,7 @@ elementos html)-->
   <!-- document é uma palavra reservada em javascript para chamar documento, por ponto para adicionar atributos -->
 
  <!DOCTYPE html>
- <html lang="en">
+ <html lang="pt-br">
  <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,3 +62,38 @@ elementos html)-->
     Cor do texto atributo inline CSS de forma adicionado de forma dinamica
 
 Aba console vervariáveis-->
+
+<!-- Acessibilidade Linguagem texto e elementos
+O lang defini idioma adicionado direto na abertura da tag html
+no paragrafo pode por outra lang para diferenciar linguas-->
+
+<button aria-label="APERTE PARA SABER MAIS"> Saber mais</button>
+
+<!-- O aria da uma descrição para leitor, explicação adicional-->
+
+<!--Acesibilidade de tabelas. O atributo ABBR o leitor faz a relação 
+e ler empresa e os nomes delas. O scope é para entender que é uma coluna, nagevador se organiza 
+para ler certo -->
+
+<table summary=" Informações relevantes">
+    <caption>Tabela:Informações sobre empresa</caption>
+    <thead>
+        <tr>
+            <th abbr="Empresa" scope="col">Nome da empresa</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row"> Apple</td>
+        </tr>
+        <tr>
+            <td>Google</td>
+        </tr>
+    </tbody>
+</table>
+
+<!--Acesibilidade de tabelas e imagens. Além do ALT, TITLE pode por um paragrafo de texto que mostra mais
+    exemplo:
+
+    alt:"Arroz" title:"Arroz" aria-label Leadby="description-arroz"
+
+    <p id="description-arroz" > O arroz.... </p>-->
